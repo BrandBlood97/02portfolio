@@ -1,12 +1,13 @@
+/* Universal Selector */
 * {
   font-family: Georgia, serif;
   box-sizing: border-box;
 }
-
+/* Header selector */
 header {
   display: flex;
   color: white;
-  background-color: rgb(13, 158, 158);
+  background-color: rgb(25, 57, 238);
   text-align: center;
   width: 100%;
   position: relative;
@@ -18,7 +19,7 @@ header h1 {
   font-weight: bold;
   margin: 0;
   padding: 0.5em;
-  background-color:rgb(13, 158, 158);
+  background-color:rgb(25, 57, 238);
   border: 10px solid rgb(128, 127, 127);
 }
 
@@ -30,14 +31,42 @@ header nav {
 }
 
 nav li {
-  display: inline-block;
+  display: inline-flex;
   padding: 0.5em;
   margin: 0.5em;
   font-size: 20px;
-  background-color:rgb(13, 158, 158);
 }
 
 nav li a {
   color: white;
   text-decoration: underline;
+}
+/* Banner */
+.pixels {
+  display: flex;
+  height: 90px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/pixels.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sub {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  padding-right: 25px;
+  position: absolute;
+  top: 160px;
+  color: white;
+  font-size: 1.2em;
+}
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 25px;
 }
